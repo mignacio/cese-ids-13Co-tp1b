@@ -29,20 +29,20 @@ static const struct alumno_s ESTEBAN_VOLENTINI = {
     .apellidos = "VOLENTINI",
     .nombres = "Esteban Daniel",
     .documento = "23.517.968",
-};
+}; /** Datos de Esteban Volentini */
 
 static const struct alumno_s MOYA_IGNACIO = {
     .apellidos = "MOYA",
     .nombres = "Ignacio Jose",
     .documento = "35.583.274",
-};
+}; /** Datos del alumno MOYA, Ignacio*/
 
 const alumno_t ALUMNOS[] = {
     &ESTEBAN_VOLENTINI,
     &MOYA_IGNACIO,
-};
+}; /** Arreglo con punteros a las constantes de alumnos */
 
-const int CANTIDAD_ALUMNOS = (sizeof(ALUMNOS) / sizeof(alumno_t));
+const int CANTIDAD_ALUMNOS = (sizeof(ALUMNOS) / sizeof(alumno_t)); /** Constante que almacena el tamaño del arreglo ALUMNOS.*/
 
 /*=====[Definitions of private global variables]=============================*/
 
@@ -51,7 +51,6 @@ const int CANTIDAD_ALUMNOS = (sizeof(ALUMNOS) / sizeof(alumno_t));
 /*=====[Implementations of public functions]=================================*/
 
 /*=====[Implementations of interrupt functions]==============================*/
-
 bool SerializarAlumno(char * cadena, size_t espacio, const alumno_t alumno) {
     int resultado;
     const char FORMATO[] = "{"
